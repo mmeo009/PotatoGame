@@ -40,7 +40,7 @@ public class CameraMove : MonoBehaviour
 
                 transform.Translate(move);
                 transform.transform.position
-                    = new Vector3(transform.position.x, transform.position.y, transform.position.z);
+                    = new Vector3(transform.position.x, y, -5);
             }
         }
     }
