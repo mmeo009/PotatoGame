@@ -1,25 +1,25 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class GameSystem : MonoBehaviour
 {
 
-    public bool pause = false;
+    public bool sP = false;
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if(Input.GetKeyDown(KeyCode.Space)) 
         {
-            if (pause == true)
+            if (sP == false)
             {
-                pause = false;
+                sP = true;
             }
             else
             {
-                pause = true;
+                sP = false;
             }
-            Debug.Log(pause);
         }
     }
 }
